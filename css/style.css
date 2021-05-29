@@ -41,6 +41,11 @@ body {
   color: var(--main-color-font);
 }
 
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .container {
   width: 1170px;
   margin-left: auto;
@@ -112,6 +117,14 @@ body {
 .mail-link:hover,
 .mail-link:focus {
   color: var(--accent-hover-color);
+}
+
+.header-contact {
+  margin-left: auto;
+}
+
+.header-contact-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 /* Добавил в хиро фон для удобства */

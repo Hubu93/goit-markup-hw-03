@@ -44,6 +44,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .container {
@@ -129,7 +130,10 @@ body {
 
 /* Добавил в хиро фон для удобства */
 .hero {
-  background-color: #000;
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 210px;
+  width: 100%;
 }
 /* Добавил в хиро фон для удобства */
 
@@ -140,6 +144,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-font);
+  text-align: center;
 }
 
 .hero-modal-btn {
@@ -149,6 +154,21 @@ body {
   letter-spacing: 0.06em;
   color: var(--white-font);
   cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+/*               WORK                       */
+
+.section {
+  padding: 94px 0 94px 0;
 }
 
 .priorities-title {
@@ -159,7 +179,20 @@ body {
   text-transform: uppercase;
 }
 
+.priorities-list {
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.priorities-list-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+}
+
 .priorities-title-description {
+  margin-top: 10px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -167,9 +200,33 @@ body {
 }
 
 .priorities-work {
+  text-align: center;
+  margin-top: 94px;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+}
+
+.priorities-work-list {
+  display: flex;
+  margin-top: 50px;
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.priorities-work-list-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-title {
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .team-list-item-title {
@@ -177,12 +234,40 @@ body {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.team-list-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basic: calc((100% - 120px) / 4);
+}
+
+.team-list-item-convert {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item-description {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+
+.footer {
+  padding: 60px 0 60px 0;
 }
 
 .footer-logo-link {
@@ -197,6 +282,11 @@ body {
 
 .address-list-item {
   list-style: none;
+  margin-top: 9px;
+}
+
+.address-list-item:first-child {
+  margin-top: 20px;
 }
 
 .address-list-link {

@@ -228,6 +228,7 @@ body {
 .team-title {
   margin-bottom: 50px;
   text-align: center;
+  font-size: 36px;
 }
 
 .team-list-item-title {
@@ -334,6 +335,11 @@ body {
 
 .portfolio-list-item {
   list-style: none;
+  margin-right: 8px;
+}
+
+.portfolio-list-item:last-child {
+  margin-right: 0;
 }
 
 .portfolio-list-item-btn {
@@ -346,6 +352,8 @@ body {
   padding: 6px 22px 6px 22px;
   border-radius: 4px;
   border: none;
+  background-color: #f5f4fa;
+  cursor: pointer;
 }
 
 .portfolio-list-item-btn:hover,
